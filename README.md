@@ -52,3 +52,5 @@ A powerful and minimalistic Task Reminder web application built using **HTML, CS
 1. Clone the repo:
    ```bash
    git clone https://github.com/your-username/task-reminder-app.git
+2. online link :
+   https://tasknotify.netlify.app/
