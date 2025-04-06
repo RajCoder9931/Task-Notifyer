@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>📅 Smart Daily Task App</title>
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/762/762686.png">
+<!-- Firebase Scripts -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging-compat.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button class="theme-toggle" onclick="toggleDarkMode()">🌙 Toggle Theme</button>
+<br>
+  <h1>📅 Smart Daily Task App</h1>
+  <div id="clock">Loading current time...</div>
+
+  <div style="text-align: center;">
+    <input type="text" id="mainTask" placeholder="Main Task Name">
+    <input type="date" id="taskDate">
+    <div id="subtasks"></div>
+    <button onclick="addSubtask()">+ Add Subtask</button>
+    <button onclick="addTask()">➕ Add Task</button>
+  </div>
+
+  <div class="task-container">
+    <div class="section">
+      <h2>🟢 Pending</h2>
+      <div id="pendingTasks"></div>
+    </div>
+    <div class="section">
+      <h2>✅ Completed</h2>
+      <div id="completedTasks"></div>
+    </div>
+  </div>
+
+ <script src="notify.js"></script>
+ 
+ 
+</body>
+</html>
