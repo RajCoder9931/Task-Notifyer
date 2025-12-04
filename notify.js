@@ -98,7 +98,7 @@ function checkReminders() {
 
 function showNotification(text) {
   if (Notification.permission === "granted") {
-    new Notification("⏰ Task Reminder", {
+    new Notification(" Task Reminder", {
       body: text,
       icon: "https://cdn-icons-png.flaticon.com/512/1827/1827279.png"
     });
@@ -143,7 +143,7 @@ const firebaseConfig = {
   messagingSenderId: "983671164257",
   appId: "1:983671164257:web:d4ff7c96061a3cd4794920"
 };
- // Paste config here
+// fir base config 
 
 firebase.initializeApp(firebaseConfig);
 
@@ -152,7 +152,7 @@ const messaging = firebase.messaging();
 messaging.getToken({ vapidKey: 'Q2UD4w6URmRV1DKriINtMLeEAqtbD4hDmAqI39PkrMU' }).then((currentToken) => {
   if (currentToken) {
     console.log('Token:', currentToken);
-    // Save token to server or use it to trigger notification
+    //  token to server or use to trigger notification
   } else {
     console.warn('No registration token available');
   }
